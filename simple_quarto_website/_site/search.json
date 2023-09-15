@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site will include at least one python code cell."
+  },
+  {
+    "objectID": "about.html#about-this-site",
+    "href": "about.html#about-this-site",
+    "title": "About",
+    "section": "",
+    "text": "This site will include at least one python code cell."
+  },
+  {
+    "objectID": "about.html#python-code-cell",
+    "href": "about.html#python-code-cell",
+    "title": "About",
+    "section": "Python code cell",
+    "text": "Python code cell\n\nPython\n\n\nDo some code there"
+  },
+  {
+    "objectID": "about.html#plot",
+    "href": "about.html#plot",
+    "title": "About",
+    "section": "Plot",
+    "text": "Plot\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n\ndf = sns.load_dataset(\"penguins\")\nprint(df)\n\n# INSERT YOUR SOLUTION HERE\nsns.set_theme(style='white',palette='Pastel1')\nFS=18\ng=sns.relplot(\n    data=df,\n    x='bill_length_mm',\n    y='flipper_length_mm',\n    hue='species',\n    col='island',\n    s=200\n)\nprint(type(g))\ng.axes[0,0].set_xlabel('Penguin bill length (mm)', fontsize=FS)\ng.axes[0,1].set_xlabel('Penguin bill length (mm)', fontsize=FS)\ng.axes[0,2].set_xlabel('Penguin bill length (mm)', fontsize=FS)\ng.axes[0,0].set_ylabel('Penguin flipper length (mm)', fontsize=FS)\ng.axes[0,0].set_title(\"Torgersen Island\",fontsize=FS)\ng.axes[0,1].set_title(\"Biscoe Island\",fontsize=FS)\ng.axes[0,2].set_title(\"Dream Island\",fontsize=FS)\nfor i in range(0,3):\n    g.axes[0,i].tick_params(axis='both', which='major', labelsize=FS)\n\nplt.setp(g._legend.get_texts(), fontsize=FS)\nplt.setp(g._legend.get_title(), fontsize=FS)\n\nplt.savefig('plot-1.pdf', bbox_inches='tight')\n\n    species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  \\\n0    Adelie  Torgersen            39.1           18.7              181.0   \n1    Adelie  Torgersen            39.5           17.4              186.0   \n2    Adelie  Torgersen            40.3           18.0              195.0   \n3    Adelie  Torgersen             NaN            NaN                NaN   \n4    Adelie  Torgersen            36.7           19.3              193.0   \n..      ...        ...             ...            ...                ...   \n339  Gentoo     Biscoe             NaN            NaN                NaN   \n340  Gentoo     Biscoe            46.8           14.3              215.0   \n341  Gentoo     Biscoe            50.4           15.7              222.0   \n342  Gentoo     Biscoe            45.2           14.8              212.0   \n343  Gentoo     Biscoe            49.9           16.1              213.0   \n\n     body_mass_g     sex  \n0         3750.0    Male  \n1         3800.0  Female  \n2         3250.0  Female  \n3            NaN     NaN  \n4         3450.0  Female  \n..           ...     ...  \n339          NaN     NaN  \n340       4850.0  Female  \n341       5750.0    Male  \n342       5200.0  Female  \n343       5400.0    Male  \n\n[344 rows x 7 columns]\n&lt;class 'seaborn.axisgrid.FacetGrid'&gt;"
+  },
+  {
+    "objectID": "slides/slides.html#getting-up",
+    "href": "slides/slides.html#getting-up",
+    "title": "Habits",
+    "section": "Getting up",
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "slides/slides.html#going-to-sleep",
+    "href": "slides/slides.html#going-to-sleep",
+    "title": "Habits",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DSAN5000-Lab1.2",
+    "section": "",
+    "text": "You can write HTML, Word and PDF documents\n\n\n\n\nYou can write PowerPoint, Beamer and revealjs presentations"
+  },
+  {
+    "objectID": "index.html#column",
+    "href": "index.html#column",
+    "title": "DSAN5000-Lab1.2",
+    "section": "",
+    "text": "You can write HTML, Word and PDF documents\n\n\n\n\nYou can write PowerPoint, Beamer and revealjs presentations"
+  },
+  {
+    "objectID": "index.html#rmd-table-quarto-table",
+    "href": "index.html#rmd-table-quarto-table",
+    "title": "DSAN5000-Lab1.2",
+    "section": "RMD Table & Quarto Table",
+    "text": "RMD Table & Quarto Table\n\nrmarkdownquarto\n\n\nHello world from RMD\n\n\nHello World from Quarto"
+  },
+  {
+    "objectID": "index.html#bullet-points-latex-math-equations",
+    "href": "index.html#bullet-points-latex-math-equations",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Bullet Points & LateX math equations",
+    "text": "Bullet Points & LateX math equations\n\nThis is an example of a bulleted list with math\nHere is an in-line math equation \\(f(x)=\\frac{e^{x^2}}{2}\\)\nHere is an non in-line math equation\n\n\\[g(x)=x^n \\rightarrow \\frac{\\partial g}{\\partial x}=n x^{n-1}\\]\n\nThis is a quote."
+  },
+  {
+    "objectID": "index.html#mermaid-diagram",
+    "href": "index.html#mermaid-diagram",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Mermaid Diagram",
+    "text": "Mermaid Diagram\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\nA Mermaid diagram"
+  },
+  {
+    "objectID": "index.html#footnote",
+    "href": "index.html#footnote",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Footnote",
+    "text": "Footnote\nHere is a footnote reference,1 and another.2\nThis paragraph won’t be part of the note, because it isn’t indented."
+  },
+  {
+    "objectID": "index.html#images",
+    "href": "index.html#images",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Images",
+    "text": "Images\n\n\n\n\nGit Branch\n\n\n\n\n\n\n\nBayer’s Theorem"
+  },
+  {
+    "objectID": "index.html#video",
+    "href": "index.html#video",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Video",
+    "text": "Video"
+  },
+  {
+    "objectID": "index.html#citations",
+    "href": "index.html#citations",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Citations",
+    "text": "Citations\nThis is a citation from reference.bib(Kang et al. 2020)"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "DSAN5000-Lab1.2",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is the footnote.↩︎\nHere’s one with multiple blocks.\nSubsequent paragraphs are indented to show that they belong to the previous footnote.\n{ some.code }\nThe whole paragraph can be indented, or just the first line. In this way, multi-paragraph footnotes work like multi-paragraph list items.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#a-literature-review",
+    "href": "slides/slides.html#a-literature-review",
+    "title": "NLP",
+    "section": "A Literature Review",
+    "text": "A Literature Review\n\nAuthor: Kang, Yue; Cai, Zhao; Tan, Chee-Wee; Huang, Qian; Liu, Hefu\nKeywords: Natural language processing; literature review; sentiment analysis; machine learning"
+  },
+  {
+    "objectID": "slides/slides.html#abstract",
+    "href": "slides/slides.html#abstract",
+    "title": "NLP",
+    "section": "Abstract",
+    "text": "Abstract\n\nNatural language processing (NLP) is gaining momentum in management research for its ability to automatically analyze and comprehend human language. Yet, despite its extensive application in management research, there is neither a comprehensive review of extant literature on such applications, nor is there a detailed walkthrough on how it can be employed as an analytical technique."
+  },
+  {
+    "objectID": "slides/slides.html#abstract-1",
+    "href": "slides/slides.html#abstract-1",
+    "title": "NLP",
+    "section": "Abstract",
+    "text": "Abstract\n\nTo this end, we review articles in the UT Dallas List of 24 Leading Business Journals that employ NLP as their focal analytical technique to elucidate how textual data can be harnessed for advancing management theories across multiple disciplines. We describe the available toolkits and procedural steps for employing NLP as an analytical technique as well as its advantages and disadvantages. In so doing, we highlight the managerial and technological challenges associated with the application of NLP in management research in order to guide future inquires."
+  },
+  {
+    "objectID": "slides/slides.html#natural-language-processing-nlp-in-management-research",
+    "href": "slides/slides.html#natural-language-processing-nlp-in-management-research",
+    "title": "NLP",
+    "section": "Natural Language Processing (NLP) in Management Research",
+    "text": "Natural Language Processing (NLP) in Management Research\nA Literature Review(Kang et al. 2020)\n\nAuthor: Kang, Yue; Cai, Zhao; Tan, Chee-Wee; Huang, Qian; Liu, Hefu\nKeywords: Natural language processing; literature review; sentiment analysis; machine learning"
+  },
+  {
+    "objectID": "slides/slides.html#images",
+    "href": "slides/slides.html#images",
+    "title": "NLP",
+    "section": "Images",
+    "text": "Images\n\n\n\n\nNLP Application\n\n\n\n\n\n\n\n\n\nKang, Yue, Zhao Cai, Chee-Wee Tan, Qian Huang, and Hefu Liu. 2020. “Natural Language Processing (NLP) in Management Research: A Literature Review.” Journal of Management Analytics 7 (2): 139–72."
+  },
+  {
+    "objectID": "slides/slides.html#section",
+    "href": "slides/slides.html#section",
+    "title": "NLP",
+    "section": "",
+    "text": "NLP Application"
+  },
+  {
+    "objectID": "slides/slides.html#section-1",
+    "href": "slides/slides.html#section-1",
+    "title": "NLP",
+    "section": "",
+    "text": "Overview"
+  }
+]

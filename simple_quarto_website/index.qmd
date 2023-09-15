@@ -1,0 +1,94 @@
+---
+title: "DSAN5000-Lab1.2"
+bibliography: reference.bib
+---
+
+## Column
+
+:::: {.columns}
+::: {.column width="50%"}
+### Documents
+
+You can write HTML, Word and PDF documents
+:::
+
+::: {.column width="50%"}
+### Presentations
+
+You can write PowerPoint, Beamer and revealjs presentations 
+
+
+:::
+::::
+
+
+## RMD Table & Quarto Table
+
+::: {.panel-tabset}
+### rmarkdown
+
+Hello world from RMD
+
+### quarto
+
+Hello World from Quarto
+:::
+
+
+## Bullet Points & LateX math equations
+
+* This is an example of a bulleted list with math 
+* Here is an in-line math equation $f(x)=\frac{e^{x^2}}{2}$
+* Here is an non in-line math equation
+
+$$g(x)=x^n \rightarrow \frac{\partial g}{\partial x}=n x^{n-1}$$
+
+>
+> This is a quote.
+>
+
+## Mermaid Diagram
+
+```{mermaid}
+%%| fig-cap: "A Mermaid diagram"
+%%| code-fold: false
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+
+## Footnote
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+        { some.code }
+
+    The whole paragraph can be indented, or just the first
+    line.  In this way, multi-paragraph footnotes work like
+    multi-paragraph list items.
+
+This paragraph won't be part of the note, because it
+isn't indented.
+
+## Images 
+
+<center> ![Git Branch](./images/2023-09-14-18-32-36.png){width=300} </center>
+
+<center> ![Bayer's Theorem](./images/2023-09-14-18-35-21.png){width=300} </center>
+
+## Video
+
+{{< video https://youtu.be/76v3gRns28U?feature=shared width=“800” height=“500” >}}
+
+## Citations
+
+This is a citation from reference.bib[@kang2020natural]
